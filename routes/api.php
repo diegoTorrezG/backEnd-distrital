@@ -20,17 +20,13 @@ use App\Http\Controllers\Api\FormController;
 });*/
 
 
-route::get("/forms", /*function (request $request){
-
-    $message = ["mensaje" => "forms"];
-
-    return response()->json ($message);
-}*/
-    [FormController::class,"read"]
-
-);
-
 route::post("/form",[FormController::class,"create"]);
+
+route::get("/forms", [FormController::class,"read"]);
+
+route::put("/form",[FormController::class,"update"]);
+
+route::delete("/form",[FormController::class,"delete"]);
 
 
 
