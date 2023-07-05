@@ -31,7 +31,7 @@ route::delete("/form",[FormController::class,"delete"]);
 
 
 
-Route::get("/saludo", function (Request $request) {
+/*Route::get("/saludo", function (Request $request) {
     
     $message = ["mensaje" => "hola que hace"];
     
@@ -44,4 +44,4 @@ Route::post("/libro", function (Request $request) {
     $message = ["book" => "100 años de soledad"];
     
     return response()->json ($message);
-});
+});*/

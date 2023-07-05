@@ -16,8 +16,8 @@ class FormController extends Controller
         $form = new form();
 
         $form->name = $request -> input("name");
-        $form->last_name = $request -> input("last_name");
-        $form->e_mail = $request -> input("e_mail");
+        $form->lastName = $request -> input("lastName");
+        $form->email = $request -> input("email");
         $form->country = $request -> input("country");
         
         $form->save();
@@ -44,8 +44,8 @@ class FormController extends Controller
         $formEspecifico = $form -> find ($idform);
 
         $formEspecifico->name = $request -> input("name");
-        $formEspecifico->last_name = $request -> input("last_name");
-        $formEspecifico->e_mail = $request -> input("e_mail");
+        $formEspecifico->lastName = $request -> input("lastName");
+        $formEspecifico->email = $request -> input("email");
         $formEspecifico->country = $request -> input("country");
 
         $formEspecifico -> save();

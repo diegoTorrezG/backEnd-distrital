@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->increments("id");
             $table->string("name");
-            $table->string("last_name");
-            $table->string("e_mail");
+            $table->string("lastName");
+            $table->string("email");
             $table->string("country");
             $table->timestamps();
         });
