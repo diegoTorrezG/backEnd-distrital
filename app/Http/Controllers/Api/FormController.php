@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\form;
-use Response;
+use Illuminate\Http\Response;
 
 class FormController extends Controller
 {
@@ -24,7 +24,9 @@ class FormController extends Controller
 
         $message = ["message" => "Registro Exitoso"];
         
-        return response()->json($message);
+        /*return response()->json($message);*/
+
+        return response()->json($message, 201);
     }
     
     public function read(request $request){
